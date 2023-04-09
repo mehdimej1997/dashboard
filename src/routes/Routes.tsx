@@ -1,4 +1,4 @@
-import { Auth } from '@pages';
+import { Admin, Auth } from '@pages';
 import { createBrowserRouter } from 'react-router-dom';
 import { Login, ForgotPassword } from 'redux/features';
 
@@ -16,6 +16,11 @@ const routes = createBrowserRouter([
         element: <ForgotPassword />,
       },
     ],
+  },
+  {
+    path: '/admin',
+    element: <Admin />,
+    children: [],
   },
 ]);
 

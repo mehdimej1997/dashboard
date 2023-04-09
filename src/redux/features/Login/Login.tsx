@@ -42,7 +42,9 @@ function Login() {
           </Link>
         </div>
       </form>
-      <Button>Login</Button>
+      <Link to="/admin">
+        <Button className="w-full">Login</Button>
+      </Link>
     </motion.div>
   );
 }
