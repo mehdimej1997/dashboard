@@ -14,13 +14,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "baseUrl": "./src",
-    "paths": {
-      "@components": ["./components"],
-      "@pages": ["./pages"],
-      "@routes": ["./routes"]
-    }
+    "jsx": "react-jsx"
   },
   "include": ["src", ".eslintrc.cjs"],
   "references": [{ "path": "./tsconfig.node.json" }]

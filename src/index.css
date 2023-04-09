@@ -6,15 +6,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
 }
 
 a {
   text-decoration: none;
 }
 
-body {
-  font-family: 'poppins', sans-serif;
-}
 .light-theme {
   --blue: #0010f7;
   --shadow-blue: #4d58f394;
@@ -40,4 +38,28 @@ body {
 
 .ant-checkbox-checked .ant-checkbox-inner {
   @apply border-blue bg-blue;
+}
+
+.ant-menu {
+  @apply border-none !important;
+}
+
+.ant-menu-item,
+.ant-menu-submenu-title {
+  @apply flex rounded-md text-primary transition-all duration-150;
+}
+
+.ant-menu-item-selected,
+/* .ant-menu-submenu-title, */
+.ant-menu-item:hover,
+.ant-menu-submenu-title:hover {
+  @apply bg-card text-primary !important;
+}
+
+.ant-dropdown-menu-item:hover {
+  background-color: transparent !important;
+}
+
+.link:hover {
+  color: #0010f7 !important;
 }

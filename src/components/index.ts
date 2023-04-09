@@ -4,5 +4,6 @@ import Button from './Button';
 import Checkbox from './CheckBox';
 import Sidebar from './Sidebar';
 import Link from './Link';
+import Navbar from './Navbar';
 
-export { InputText, Heading, Button, Checkbox, Sidebar, Link };
+export { InputText, Heading, Button, Checkbox, Sidebar, Link, Navbar };

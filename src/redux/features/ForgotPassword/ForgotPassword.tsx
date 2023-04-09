@@ -1,8 +1,8 @@
-import { Button, Heading, InputText } from '@components';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { z } from 'zod';
 import { motion } from 'framer-motion';
+import { Button, Heading, InputText } from '../../../components';
 
 const zodEmail = z.string().email();
 

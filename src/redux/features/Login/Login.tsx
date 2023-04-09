@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
-import { Button, Heading, InputText } from '@components';
 import { Checkbox } from 'antd';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Button, Heading, InputText } from '../../../components';
 
 function Login() {
   const [passwordIsShown, setPasswordIsShown] = useState<boolean>(false);
