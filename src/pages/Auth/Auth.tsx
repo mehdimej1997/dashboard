@@ -1,3 +1,4 @@
+import { AnimatePresence } from 'framer-motion';
 import { Outlet } from 'react-router-dom';
 
 function Auth() {
@@ -7,7 +8,9 @@ function Auth() {
         <img src="/assets/auth.svg" alt="company name" width={1200} />
       </div>
       <div className="col-start-8 col-end-12 mx-auto w-4/5 self-center">
-        <Outlet />
+        <AnimatePresence>
+          <Outlet />
+        </AnimatePresence>
       </div>
     </div>
   );

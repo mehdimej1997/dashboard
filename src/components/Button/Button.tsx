@@ -1,20 +1,16 @@
-import { ButtonHTMLAttributes, DetailedHTMLProps } from 'react';
+import { Button, ButtonProps } from 'antd';
 
-type ButtonProps = DetailedHTMLProps<
-  ButtonHTMLAttributes<HTMLButtonElement>,
-  HTMLButtonElement
->;
-
-function Button({ ...props }: ButtonProps) {
+function CustomButton({ ...props }: ButtonProps) {
   return (
-    <button
-      type="button"
+    <Button
+      type="primary"
+      size="large"
       {...props}
-      className="rounded-md bg-blue py-2.5 font-medium text-white transition-all duration-200 hover:opacity-70"
+      className="rounded-md bg-blue py-2.5 font-semibold text-white transition-all duration-200 hover:opacity-70"
     >
       {props.children}
-    </button>
+    </Button>
   );
 }
 
-export default Button;
+export default CustomButton;

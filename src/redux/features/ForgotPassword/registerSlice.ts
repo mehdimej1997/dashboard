@@ -12,11 +12,11 @@ const initialState: InitialState = {
 
 // const login = createAsyncThunk('user/login', async () => {});
 
-const loginSlice = createSlice({
+const themeSlice = createSlice({
   name: 'user/login',
   initialState,
   reducers: {},
   extraReducers() {},
 });
 
-export default loginSlice.reducer;
+export default themeSlice.reducer;

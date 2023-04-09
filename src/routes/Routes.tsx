@@ -1,6 +1,6 @@
 import { Auth } from '@pages';
 import { createBrowserRouter } from 'react-router-dom';
-import { Login } from 'redux/features';
+import { Login, ForgotPassword } from 'redux/features';
 
 const routes = createBrowserRouter([
   {
@@ -10,6 +10,10 @@ const routes = createBrowserRouter([
       {
         index: true,
         element: <Login />,
+      },
+      {
+        path: '/forgot-password',
+        element: <ForgotPassword />,
       },
     ],
   },

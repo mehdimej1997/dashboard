@@ -7,7 +7,10 @@ type HeadingProps = DetailedHTMLProps<
 
 function Heading({ ...props }: HeadingProps) {
   return (
-    <h1 {...props} className={`${props?.className} text-4xl font-medium`}>
+    <h1
+      {...props}
+      className={`${props?.className} text-5xl font-medium text-gray`}
+    >
       {props?.children}
     </h1>
   );

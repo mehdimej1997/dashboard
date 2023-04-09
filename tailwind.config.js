@@ -5,11 +5,11 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        blue: '0 0 6px var(--shadow-blue)',
+        'sh-blue': '0 0 10px var(--shadow-blue)',
+        error: '0 0 10px var(--shadow-error)',
       },
       colors: {
         blue: 'var(--blue)',
-        'shadow-blue': 'var(--shadow-blue)',
         primary: 'var(--primary)',
         secondary: 'var(--secondary)',
         background: 'var(--background)',

@@ -17,7 +17,8 @@ body {
 }
 .light-theme {
   --blue: #0010f7;
-  --shadow-blue: #0010f794;
+  --shadow-blue: #4d58f394;
+  --shadow-error: #ff313194;
   --primary: black;
   --secondary: #636e72;
   --background: #f0f3f5;
@@ -27,7 +28,8 @@ body {
 
 .dark-theme {
   --blue: #0063f7;
-  --shadow-blue: #0063f794;
+  --shadow-blue: #408cff94;
+  --shadow-error: #ff313194;
   --primary: #fff;
   --secondary: #636e72;
   --background: #1f1f1f;
@@ -35,3 +37,7 @@ body {
   --gray: #2d3436;
 }
 @tailwind utilities;
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  @apply border-blue bg-blue;
+}
